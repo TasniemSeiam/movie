@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  background-color: #121212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0 80px;
+}
+.top{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+
+}
+.topPage{
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 550px;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    filter: 0!important;
+    
+}
+.topPage img{
+    max-height: 550px;
+    width: 100%;
+}
+.bluerDiv{
+    text-align: center;
+    /* background-color: rgba(244, 244, 244, 0.238); */
+    background:linear-gradient( rgba(244, 244, 244, 0.207),rgba(244, 244, 244, 0.167));
+    border-radius: 20px;
+    backdrop-filter: blur(10px) !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding:0 10px ;
+    height:30%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center ;
+}
+.topBluer{
+    padding: 12px 70px;
+    box-sizing: border-box;
+}
+.topBluer h2{
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: -7px;
+}
+.bluerDiv h4{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+.bluerDiv p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.headerText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 20px 90px 0 90px;
 }
 
-.App-link {
-  color: #61dafb;
+.headerText p{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.movie-item{
+    width: 15%;
+    height: 350px;
+    /* padding: 20px; */
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.movie-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-item img{
+    max-width: 100%;
+    height: 100%;
+}
+.dots{
+    position: absolute;
+    top: 0;
+    right:10px;
+}
+.dots>span{
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    background: #959595;
+    border-radius: 50%;
+    margin: 0 1px;
+    border: #363636 1px solid;
+}
+.footer{
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 25px 15px 50px;
+
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    color: #fff;
+}
+.rightSide ul{
+    margin-top: 20px;
+}
+.rightSide ul li:hover{
+    cursor: pointer;
+    color: #959595;
+}
+
+.footer ul> li> a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer ul> li:hover> a{
+    text-decoration: underline;
+}
+.leftSide{
+    flex-basis: 30%;
+    display: flex;
+    gap: 50px;
+}
+.leftSide ul{
+    flex-direction: column;
 }
