@@ -36,7 +36,7 @@ class MovieList extends PureComponent {
     //   backgroundSize: "cover", // Ensure the image covers the container
     //   backgroundPosition: "center", // Center the image
     //   filter: "blur(50px)",
-      
+    //   width: "100%",
     //   height: "75vh",
     // };
     // <div className="top" style={backgroundStyle}></div>
