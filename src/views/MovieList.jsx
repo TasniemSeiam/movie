@@ -31,14 +31,14 @@ class MovieList extends PureComponent {
     if (loading) {
       return <p>Loading...</p>;
     }
-    const backgroundStyle = {
-      backgroundImage: `url(https://image.tmdb.org/t/p/w500${movies[17].backdrop_path})`, //src={`https://image.tmdb.org/t/p/w500${movies[17].backdrop_path}`}
-      backgroundSize: "cover", // Ensure the image covers the container
-      backgroundPosition: "center", // Center the image
-      filter: "blur(50px)",
+    // const backgroundStyle = {
+    //   backgroundImage: `url(https://image.tmdb.org/t/p/w500${movies[17].backdrop_path})`, //src={`https://image.tmdb.org/t/p/w500${movies[17].backdrop_path}`}
+    //   backgroundSize: "cover", // Ensure the image covers the container
+    //   backgroundPosition: "center", // Center the image
+    //   filter: "blur(50px)",
       
-      height: "75vh",
-    };
+    //   height: "75vh",
+    // };
     // <div className="top" style={backgroundStyle}></div>
     return (
       <main>
