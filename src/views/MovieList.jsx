@@ -32,25 +32,24 @@ class MovieList extends PureComponent {
       return <p>Loading...</p>;
     }
     const backgroundStyle = {
-      backgroundImage: `url(https://s3-alpha-sig.figma.com/img/5cc2/2206/646e04a4e67b588bb4403e9de9c16477?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LVf5qRg8KcvZz-7vKksF9mHd0nNDOKCP1faqvYme8LRvxvGFXINFOuXbj~UQGnl~eYuj62YTVRoXNBz00peu6Oj0us8mPBOatjvBpKZquHU2vng8jl6K84Ac~9gdnR2AZX1v2uIFrQfVKDL~pQuJsogPLHGyQJX1iqDBzwpAASFAY6zEJPem4wzJbNaX~2mVMt20H4W36DUfd-A0hraKq0RUm3NVGZGeLOi6ce36-DNDNn8FXiov8HwTxkj0wvI6IMQyC3hFMF8p1tsjFhzQ3WsIcPspZhiljql17JlhBBzAF22PJoW2N~qr3owT0tAb~91ZPSwl53hXnp-PUzKRLQ__)`, //src={`https://image.tmdb.org/t/p/w500${movies[17].backdrop_path}`}
+      backgroundImage: `url(https://image.tmdb.org/t/p/w500${movies[17].backdrop_path})`, //src={`https://image.tmdb.org/t/p/w500${movies[17].backdrop_path}`}
       backgroundSize: "cover", // Ensure the image covers the container
       backgroundPosition: "center", // Center the image
       filter: "blur(50px)",
       
       height: "75vh",
     };
+    // <div className="top" style={backgroundStyle}></div>
     return (
       <main>
-        <div className="top" style={backgroundStyle}></div>
-        <div className="topPage" >
+        <div className="topPage" style={{ width: "87%"}} >
           <img
             className="imageTop"
-            src={`https://s3-alpha-sig.figma.com/img/5cc2/2206/646e04a4e67b588bb4403e9de9c16477?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LVf5qRg8KcvZz-7vKksF9mHd0nNDOKCP1faqvYme8LRvxvGFXINFOuXbj~UQGnl~eYuj62YTVRoXNBz00peu6Oj0us8mPBOatjvBpKZquHU2vng8jl6K84Ac~9gdnR2AZX1v2uIFrQfVKDL~pQuJsogPLHGyQJX1iqDBzwpAASFAY6zEJPem4wzJbNaX~2mVMt20H4W36DUfd-A0hraKq0RUm3NVGZGeLOi6ce36-DNDNn8FXiov8HwTxkj0wvI6IMQyC3hFMF8p1tsjFhzQ3WsIcPspZhiljql17JlhBBzAF22PJoW2N~qr3owT0tAb~91ZPSwl53hXnp-PUzKRLQ__`}
+            src={`https://image.tmdb.org/t/p/w500${movies[17].backdrop_path}`}
             alt={movies[17].title}
           />
           <div className=" topBluer bluerDiv">
-            <h2>Black Adam</h2>
-            <h3>Action</h3>
+            <h2>{movies[17].title}</h2>
           </div>
         </div>
         <div className="headerText">

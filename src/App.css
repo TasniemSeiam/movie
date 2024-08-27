@@ -19,14 +19,15 @@ body {
 
 }
 .topPage{
-    width: 87%;
+   
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
     max-height: 550px;
-    
-    left: 85px;   
+    /* position: absolute;
+    top: 3%;
+    left: 85px;    */
 }
 .topPage img{
     max-height: 550px;
@@ -51,9 +52,12 @@ body {
     flex-direction: column;
     justify-content: center ;
 }
-.topBluer{
-    padding: 12px 70px;
+.topPage .topBluer{
+    /* padding: 12px 70px; */
+    width: 88%;
+    margin-left:6%;
     box-sizing: border-box;
+    height: 50px;
 }
 .topBluer h2{
     font-size: 29px;
