@@ -25,13 +25,13 @@ const Footer = () => {
             <h4>About</h4>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="#feature">Features</a>
               </li>
               <li>
-                <a href="#">News & Blogs</a>
+                <a href="#news">News & Blogs</a>
               </li>
             </ul>
           </div>
@@ -39,13 +39,13 @@ const Footer = () => {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="#">Facebook</a>
+                <a href="https://facebook.com">Facebook</a>
               </li>
               <li>
-                <a href="#">Twitter</a>
+                <a href="https://x.com">Twitter</a>
               </li>
               <li>
-                <a href="#">Instagram</a>
+                <a href="https://instgram.com">Instagram</a>
               </li>
             </ul>
           </div>
@@ -53,13 +53,13 @@ const Footer = () => {
             <h4>Support</h4>
             <ul>
               <li>
-                <a href="#">FAQs</a>
+                <a href="#FAQs">FAQs</a>
               </li>
               <li>
-                <a href="#">Support Centre</a>
+                <a href="#Support">Support Centre</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="#Contact">Contact Us</a>
               </li>
             </ul>
           </div>
