@@ -26,10 +26,8 @@ body {
     overflow: hidden;
     max-height: 550px;
     position: absolute;
-    top: 30px;
-    left: 85px;
-    filter: 0!important;
-    
+    top: 3%;
+    left: 85px;   
 }
 .topPage img{
     max-height: 550px;
